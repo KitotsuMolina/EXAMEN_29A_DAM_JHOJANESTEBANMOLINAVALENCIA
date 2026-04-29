@@ -13,7 +13,7 @@ public class Main {
 		int numero = teclado.nextInt();
 
 		if (esPrimo(numero)) {
-			System.out.println(numero + " es primo.");
+			System.out.println("el "+ numero + " es primo.");
 		} else {
 			System.out.println(numero + " no es primo.");
 		}
@@ -28,6 +28,7 @@ public class Main {
 
 		for (int divisor = 2; divisor <= Math.sqrt(numero); divisor++) {
 			if (numero % divisor == 0) {
+				System.out.println("El "+ divisor + "es un numero divisor")
 				return false;
 			}
 		}
